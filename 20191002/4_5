@@ -1,3 +1,4 @@
+
 <!doctype html> <!-- 20190927.html -->
 <html><head><meta charset="utf-8"/> <meta name="viewport" content="width=device-width, initial-scale=1"/>
 <style> [class*="col-"] {float:left; padding:10px;} 
@@ -19,12 +20,12 @@
 <body><header></header><section>
 <h4>이름</h4><p>소스코드</p>
 <picture>
-<source media="(min-width:768px)"srcset="https://jihan111.github.io/20190927/자바%20실습%201%20출력.png">
-<img src="https://jihan111.github.io/20190927/자바%20실습%201%20출력(모).png" alt="소스코드"style="width:auto;"/>
+<source media="(min-width:768px)"srcset="https://dnslvlwk9870.github.io/20191002/Ex2_5.PNG">
+<img src="https://dnslvlwk9870.github.io/20191002/Ex2_5%20결과.PNG" alt="소스코드"style="width:auto;"/>
 </picture>
 <p>결과화면</p>
 <picture>
-<source media="(min-width:768px)"srcset="https://jihan111.github.io/20190927/자바%20실습%201%20결과.png">
-<img src="https://jihan111.github.io/20190927/자바%20실습%201%20결과(모).png" alt="결과화면"style="width:auto;"/>
+<source media="(min-width:768px)"srcset="https://dnslvlwk9870.github.io/20191002/Ex2_5.PNG">
+<img src="https://dnslvlwk9870.github.io/20191002/Ex2_5%20결과.PNG" alt="결과화면"style="width:auto;"/>
 </picture>
 </section></body></html>
