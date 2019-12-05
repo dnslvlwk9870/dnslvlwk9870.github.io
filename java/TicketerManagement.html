@@ -1,0 +1,27 @@
+package org.javaro.lecture;
+
+public class TicketManagement {
+
+	public void reservation(AirPlane airplane, Ticketer ticketer, String destination) {
+		airplane.reservation(ticketer);
+		ticketer.setDestination(destination);
+		ticketer.setAirplane(airplane.getAirplaneName());
+		System.out.println(ticketer.getName() + "님은 " + ticketer.getDestination() + "으로 가는 " + airplane.getAirplaneName() + "의 비행기를 예약하셨습니다.");
+
+	}
+
+	public void cancelReservation(AirPlane airplane, Ticketer ticketer) {
+		airplane.cancelReservation(ticketer);
+		System.out.println(ticketer.getName() + "님은 " + ticketer.getDestination() + "으로 가는 " + airplane.getAirplaneName() + "의 비행기를 취소하셨습니다.");
+	}
+	
+	public void arrive(Ticketer ticketer) {
+		System.out.println(ticketer.getName() + "님은 " +ticketer.getAirplane() + " 비행기로 " + ticketer.getDestination() + "에 도착하셨습니다.");
+
+	}
+
+	public void PrintAll(AirPlane airplane) {
+			System.out.println(airplane.getAirplaneName() + "의 예매 좌석은 : " + airplane.getCount());
+			System.out.println(airplane.getAirplaneName() + "의 남은 좌석은 : " + (50 - airplane.getCount()));
+	}
+}
