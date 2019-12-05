@@ -1,0 +1,43 @@
+package org.javaro.lecture;
+import org.javaro.lecture.*;
+public class MainProg {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		AirPlane ap = new AirPlane();
+		ap.setAirplaneName("대한 항공");
+		Ticketer ticketer1 = new Ticketer();
+		Ticketer ticketer2 = new Ticketer();
+		Ticketer ticketer3 = new Ticketer();
+		ticketer1.setName("고길동");
+		ticketer2.setName("둘리");
+		ticketer3.setName("또치");
+		TicketManagement TM = new TicketManagement();
+
+		System.out.println("소형비행기 예매 시스템");
+		System.out.println();
+		System.out.println("좌석 현황");
+		TM.PrintAll(ap);
+		System.out.println();
+		
+		TM.reservation(ap, ticketer1, "제주");
+		TM.reservation(ap, ticketer2, "제주");
+		TM.reservation(ap, ticketer3, "제주");
+		System.out.println();
+
+		System.out.println("좌석 현황");
+		TM.PrintAll(ap);
+		System.out.println();
+
+		TM.cancelReservation(ap, ticketer1);
+		System.out.println("");
+		
+		System.out.println("좌석 현황");
+		TM.PrintAll(ap);	
+		System.out.println("---리포트 종료---");
+		
+		TM.arrive(ticketer2);
+		TM.arrive(ticketer3);
+	}
+
+}
